@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ratchada Thai Therapy</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+<body>
+ 
+    <header>
+    
+        <div class="log">
+            <img id="logo" src="images/logo.png" alt="logo">
+        </div>
+        <div class="arrow"></div>
+      
+    
+    
+    </header>
+    <div class="hello">
+        
+            <a href="index.html"> Home</a>
+            <button> <a href="book.html">Book Now </a> </button>
+            <a class="be" href="services.html"> Services</a>
+      
+    </div>
+    
+    <section id="services">
+        
+        <div class="service-container">
+            <div class="service">
+                <img src="images/traditional-thai-massage.jpg" alt="Traditional Thai Massage" class="service-image">
+                <h3>Traditional Thai Massage</h3>
+                <p>A floor-based massage involving deep tissue work and stretching, performed without oils. Wear loose, comfortable clothing.</p>
+            </div>
+            <div class="service">
+                <img src="images/deep-tissue-massage.jpg" alt="Deep Tissue Massage" class="service-image">
+                <h3>Deep Tissue Massage</h3>
+                <p>Targets deep muscle layers and joints to relieve severe tension, ideal for persistent pain and sports injuries.</p>
+            </div>
+            <div class="service">
+                <img src="images/aromatherapy-massage.jpg" alt="Aromatherapy Massage" class="service-image">
+                <h3>Thai Combination</h3>
+                <p>Enhances well-being and health using essential oils and aromatic compounds in a relaxing massage.</p>
+            </div>
+            <div class="service">
+                <img src="images/swedish-massage.jpg" alt="Swedish Massage" class="service-image">
+                <h3>Body Scrub</h3>
+                <p>A classic technique using long, flowing strokes to relax muscles and improve circulation.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 id="prices">Prices and Options</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>30 min</th>
+                    <th>45 min</th>
+                    <th>60 min</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Deep Tissue</td>
+                    <td>£35</td>
+                    <td> - </td>
+                    <td>£60</td>
+                    
+                </tr>
+                <tr>
+                    <td>Thai Traditional</td>
+                    <td>£35</td>
+                    <td> - </td>
+                    <td>£60</td>
+                    
+                </tr>
+                <tr>
+                    <td>Foot Massage</td>
+                    <td>£35</td>
+                    <td> - </td>
+                    <td>£60</td>
+                    
+                </tr>
+                <tr>
+                    <td>Thai Combination</td>
+                    <td> - </td>
+                    <td>£60</td>
+                    <td> - </td>
+                    
+                </tr>
+                <tr>
+                    <td>Body Scrub</td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>£80</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Ratchada Thai Therapy</h2>
+                <p><strong>Location:</strong> 129 Chiswick High Road, London, W4 2ED</p>
+                <p><strong>Phone:</strong> 07557785900 </p>
+                <p><strong>Email:</strong> <a href="mailto:ratchadathaitherapy@gmail.com">ratchadathaitherapy@gmail.</a></p>
+            </div>
+            <div class="footer-section" id="hide">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Book an Appointment</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="hide">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="right">
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday: 10:30 AM - 9:00 PM</p>
+            </div>
+           
+        </div>
+      
+    </footer>
+
+    <footer>
+        <p>&copy; 2024 Ratchada Thai Therapy. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('.arrow').addEventListener('click', function() {
+            var helloDiv = document.querySelector('.hello');
+            if (helloDiv.style.display === 'none' || helloDiv.style.display === '') {
+                helloDiv.style.display = 'flex';
+            } else {
+                helloDiv.style.display = 'none';
+            }
+    });
+    </script>
+    <script>
+
+        
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
